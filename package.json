@@ -1,0 +1,17 @@
+{
+  "name": "patch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "opFns.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.5"
+  }
+}

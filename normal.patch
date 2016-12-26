@@ -1,0 +1,10 @@
+8a9
+> const fs = require('fs')
+492d492
+<     subGas(runState, new BN(numOfTopics * fees.logTopicGas.v + memLength * fees.logDataGas.v))
+499a500,504
+>     var toWrite = {}
+>     toWrite.address= log[0].toString('hex')
+>     toWrite.topics = log[1].map(function(x){return x.toString('hex')})
+>     toWrite.data = log[2].toString('hex')
+>     fs.appendFileSync('./allFiredEvents', JSON.stringify(toWrite) + '\n')
